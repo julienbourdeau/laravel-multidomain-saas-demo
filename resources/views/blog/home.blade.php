@@ -7,7 +7,7 @@
                         <img src="{{ $post->thumbnail }}" alt="" class="h-32 w-32 mr-6 bg-gray-200 rounded shadow-sm">
                         <div>
                             <h3 class="font-bold text-lg">
-                                <a href="{{ "TODO" }}">{{ $post->title }}</a>
+                                <a href="{{ route('blogpost', ['post' => $post->id]) }}">{{ $post->title }}</a>
                             </h3>
                             <p class="text-gray-800">{{ \Illuminate\Support\Str::limit($post->content, 280) }}</p>
                             <div class="mt-2 space-x-4">
